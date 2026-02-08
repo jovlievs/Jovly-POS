@@ -1,43 +1,113 @@
-# yii console commands
+# ============================================
+# YII2 CONSOLE
+# ============================================
 /yii
 /yii_test
 /yii_test.bat
 
-# phpstorm project files
+# ============================================
+# SECURITY - CRITICAL!
+# ============================================
+
+# Local configuration files (CONTAIN SECRETS!)
+*-local.php
+.env
+.env.local
+.env.*.local
+
+# ============================================
+# YII2 RUNTIME & CACHE
+# ============================================
+
+# Runtime directories
+/frontend/runtime/*
+/backend/runtime/*
+/console/runtime/*
+!*/runtime/.gitkeep
+
+# Web assets cache
+/frontend/web/assets/*
+/backend/web/assets/*
+!*/web/assets/.gitkeep
+
+# ============================================
+# DATABASE
+# ============================================
+
+# Database dumps
+*.sql
+*.sqlite
+*.db
+
+# ============================================
+# DEPENDENCIES
+# ============================================
+
+# Composer
+/vendor/
+composer.phar
+
+# ============================================
+# IDE & EDITORS
+# ============================================
+
+# PhpStorm
 .idea
 
-# netbeans project files
+# NetBeans
 nbproject
 
-# zend studio for eclipse project files
+# Eclipse/Zend Studio
 .buildpath
 .project
 .settings
 
-# windows thumbnail cache
+# VS Code
+.vscode/
+
+# Vim
+*.swp
+*.swo
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+
+# Windows
 Thumbs.db
+Desktop.ini
 
-# composer vendor dir
-/vendor
-
-# composer itself is not needed
-composer.phar
-
-# Mac DS_Store Files
+# macOS
 .DS_Store
 
-# phpunit itself is not needed
+# Linux
+*~
+
+# ============================================
+# TESTING & LOGS
+# ============================================
+
+# PHPUnit
 phpunit.phar
-# local phpunit config
 /phpunit.xml
 
-# vagrant runtime
-/.vagrant
+# Log files
+*.log
 
-# ignore generated files
+# ============================================
+# GENERATED FILES
+# ============================================
+
 /frontend/web/index.php
 /frontend/web/index-test.php
 /frontend/web/robots.txt
 /backend/web/index.php
 /backend/web/index-test.php
 /backend/web/robots.txt
+
+# ============================================
+# OTHER
+# ============================================
+
+# Vagrant
+/.vagrant
